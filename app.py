@@ -21,11 +21,11 @@ def start1():
         """
     st.markdown(html_temp, unsafe_allow_html=True)
     age = st.number_input("Age")
-    ed = st.number_input(" Years od education")
+    ed = st.number_input(" Years of education")
     employ = st.number_input("Employed for how many years")
     debtinc = st.number_input("Debt to income ratio")
-    creddebt = st.number_input("Creddebt")
-    othdebt = st.number_input("othdebt")
+    creddebt = st.number_input("Credit debt")
+    othdebt = st.number_input("Other debt")
     if st.button("Predict"):
         result=Prediction(age, ed, employ, debtinc, creddebt,othdebt)
         if result> 0.2476080913770519:
